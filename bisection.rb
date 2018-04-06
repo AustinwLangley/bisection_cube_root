@@ -6,9 +6,12 @@ epsilon = gets.to_f
 
 num_guesses = 0
 
-if cube < 1
+if cube < 1 && cube > 0
   low = cube
   high = cube * 2.0
+elsif cube < 0
+  low = cube
+  high = 0
 else
   low = 0
   high = cube  
